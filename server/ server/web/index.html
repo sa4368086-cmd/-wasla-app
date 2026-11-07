@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وصلة | WASLA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>وصلة</h1>
+    <p>اتعرف على ناس جديدة من كل العالم</p>
+
+    <section class="videos">
+      <video id="remoteVideo" autoplay playsinline></video>
+      <video id="localVideo" autoplay muted playsinline></video>
+    </section>
+
+    <p id="status">اضغط ابدأ للبحث عن شخص</p>
+
+    <div class="controls">
+      <button id="startBtn">ابدأ</button>
+      <button id="nextBtn">التالي</button>
+      <button id="stopBtn">إيقاف</button>
+    </div>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
